@@ -1,0 +1,30 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block main %}
+
+    <button class="btn btn-outline-dark"
+            type="button">
+
+        <a href="{{ path('admin_establishments_list_insert') }}">Créer un établissement</a>
+
+    </button>
+
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <td>Nom</td>
+                    <td>Ville</td>
+                    <td>Détails</td>
+                    <td>Modifier</td>
+                    <td>Supprimer</td>
+                </tr>
+            </thead>
+
+
+            </tbody>
+        </table>
+    </div>
+
+{% endblock main %}
+
